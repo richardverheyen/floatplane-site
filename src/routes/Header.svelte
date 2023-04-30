@@ -2,8 +2,10 @@
   import { page } from "$app/stores";
   import Ripple from "@smui/ripple";
   import Hamburger from "./Hamburger.svelte";
-  import Logo from "./Logo3.svelte";
+  import logo from "$lib/images/logo.svg";
+
   let scrollY: number;
+  let heroLogoMidPoint = 350;
 
   export let open: boolean = false;
   export let toggleDrawer: any;
@@ -21,17 +23,23 @@
 <svelte:window bind:scrollY />
 
 {#if $page.url.pathname === "/"}
-  <header class={scrollY === 0 ? "" : "opaque"}>
+  <header class={scrollY <= heroLogoMidPoint ? "" : "opaque"}>
     <div class="gutters main">
       <a
         href="#top"
         style="text-decoration: none"
         on:click|preventDefault={scrollIntoView}
       >
-        <Logo alt={scrollY === 0} />
+        <img 
+          id="nav-logo" 
+          class={scrollY > heroLogoMidPoint ? "visible" : "hidden"}
+          src={logo} 
+          width=200 
+          height=60 
+          alt="Floatplane">
       </a>
 
-      <nav class={scrollY === 0 ? "white" : "black"}>
+      <nav class={scrollY <= heroLogoMidPoint ? "white" : "black"}>
         <a
           href="#service"
           on:click|preventDefault={scrollIntoView}
@@ -48,7 +56,7 @@
           use:Ripple={{ surface: true }}>Contact Us</a
         >
       </nav>
-      <div class="toggle {scrollY > 0 ? 'black' : 'white'}">
+      <div class="toggle {scrollY > heroLogoMidPoint ? 'black' : 'white'}">
         <Hamburger bind:open {toggleDrawer} />
       </div>
     </div>
@@ -104,6 +112,17 @@
 
       @media (max-width: 450px) {
         justify-content: flex-start;
+      }
+
+      #nav-logo {
+        padding-right: 28px;
+        padding-top: 10px;
+        filter: invert(1);
+        transition: opacity ease 200ms;
+
+        &.hidden {
+          opacity: 0;
+        }
       }
 
       nav {
