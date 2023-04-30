@@ -2,7 +2,7 @@
   import { page } from "$app/stores";
   import Drawer, { Content, Header, Title, Subtitle } from "@smui/drawer";
   import Footer from "./Footer.svelte";
-  import Logo3 from "./Logo3.svelte";
+  import logo from "$lib/images/logo.svg";
 
   export let open = false;
   export let scrollIntoView: any;
@@ -10,7 +10,13 @@
 
 <Drawer variant="modal" fixed={true} bind:open style="background: #f5f5f7">
   <Header>
-    <Logo3 />
+    <img 
+      id="drawer-logo" 
+      class="visible"
+      src={logo} 
+      width=200 
+      height=60 
+      alt="Floatplane">  
   </Header>
   <Content>
     <div class="gutters">
@@ -40,6 +46,17 @@
 
 <style lang="scss">
   @import "../theme/_colors";
+
+  #drawer-logo {
+    padding-right: 28px;
+    padding-top: 20px;
+    filter: invert(1);
+    transition: opacity ease 200ms;
+
+    &.hidden {
+      opacity: 0;
+    }
+}
 
   .gutters {
     display: flex;

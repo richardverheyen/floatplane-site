@@ -65,7 +65,13 @@
   <header class="opaque">
     <div class="gutters main">
       <a href="/" style="text-decoration: none">
-        <Logo alt={false} />
+        <img 
+          id="nav-logo" 
+          class="visible"
+          src={logo} 
+          width=200 
+          height=60 
+          alt="Floatplane">
       </a>
 
       <nav class="black">

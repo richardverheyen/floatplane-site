@@ -1,8 +1,11 @@
 <script>
   import logo from "$lib/images/logo.svg";
+  import cloud from "$lib/images/cloud-1.svg";
 </script>
 
-<section id="top">
+<section 
+  id="top"
+  style="background: -400px 40% / 800px no-repeat url({cloud}), calc(100% - -300px) 70% / 800px no-repeat url({cloud}), linear-gradient(#20717D, #569F9E, #E7C29F);">
   <div class="gutters">
     <picture>
       <source
