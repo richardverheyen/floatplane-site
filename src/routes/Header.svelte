@@ -23,7 +23,7 @@
 <svelte:window bind:scrollY />
 
 {#if $page.url.pathname === "/"}
-  <header class={scrollY <= heroLogoMidPoint ? "" : "opaque"}>
+  <header class={scrollY > heroLogoMidPoint ? "opaque" : ""}>
     <div class="gutters main">
       <a
         href="#top"
@@ -39,7 +39,7 @@
           alt="Floatplane">
       </a>
 
-      <nav class={scrollY <= heroLogoMidPoint ? "white" : "black"}>
+      <nav class={scrollY > heroLogoMidPoint ? "black" : "white"}>
         <a
           href="#service"
           on:click|preventDefault={scrollIntoView}
