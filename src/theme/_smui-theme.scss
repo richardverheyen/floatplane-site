@@ -1,0 +1,129 @@
+@use "./colors" as colors;
+
+@use "@material/theme/index" as theme with (
+  $primary: colors.$primary,
+  $secondary: colors.$secondary,
+  $surface: colors.$surface,
+  $background: colors.$background,
+  $error: colors.$error
+);
+@use "@material/typography/index" as typography;
+
+body {
+  margin: 0;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+html {
+  @include typography.typography("body1");
+  font-family: "Lato", sans-serif;
+  background: colors.$background;
+  -webkit-font-smoothing: antialiased;
+}
+
+.mdc-typography--headline1 {
+  @include typography.typography("headline1");
+  font-family: "Oswald", sans-serif;
+  line-height: 100%;
+  font-size: 4.5em;
+}
+
+.mdc-typography--headline2 {
+  @include typography.typography("headline2");
+  font-family: "Oswald", sans-serif;
+  line-height: 100%;
+
+  font-size: 3em;
+  @media (max-width: 660px) {
+    font-size: 7.3vw;
+  }
+  @media (max-width: 440px) {
+    font-size: 2em;
+  }
+}
+
+.mdc-typography--headline3 {
+  @include typography.typography("headline3");
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4em;
+  line-height: 100%;
+}
+
+.mdc-typography--caption {
+  @include typography.typography("caption");
+  font-size: 0.8em;
+}
+
+i {
+  font-family: "Bad Script", cursive;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  width: 100%;
+}
+.gutters {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 64rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.mdc-text-field {
+  background-color: colors.$surface;
+}
+
+.mdc-button__label {
+  font-family: "Arimo", sans-serif;
+  font-weight: 600;
+}
+
+.mdc-drawer {
+  min-width: 280px;
+
+  @media (min-width: 360px) {
+    min-width: 300px;
+  }
+
+  @media (min-width: 400px) {
+    min-width: 340px;
+  }
+}
+
+.mdc-chip--selected {
+  .mdc-chip__checkmark {
+    border-radius: 50%;
+    border: 2px solid #4bb543;
+    background-color: #4bb543;
+    box-sizing: border-box;
+
+    .mdc-chip__checkmark-svg {
+      width: 16px;
+      height: 16px;
+
+      .mdc-chip__checkmark-path {
+        stroke: #fff;
+      }
+    }
+  }
+}
+
+ul.mdc-image-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  width: calc(100% + 10px);
+}
