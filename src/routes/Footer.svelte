@@ -2,9 +2,8 @@
 </script>
 
 <footer>
-  <p><span>📞</span> 03 8907 8575</p>
-  <p><span>✉️</span> contact@goodcallcopywriting.com</p>
-  <p><span>📍</span> 407 St Kilda Rd Melbourne, VIC 3004</p>
+  <p><span>✉️</span> hello@floatplane.dev</p>
+  <p><span>📍</span> 278 Bathurst St West Hobart, TAS 7000</p>
 </footer>
 
 <style lang="scss">

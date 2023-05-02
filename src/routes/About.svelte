@@ -1,11 +1,7 @@
 <script lang="ts">
   import Button, { Label } from "@smui/button";
-  import kwigonw from "$lib/images/kwigon.webp";
-  import kwigon from "$lib/images/kwigon.png";
-  import yodaw from "$lib/images/yoda.webp";
-  import yoda from "$lib/images/yoda.png";
-  import jarjarw from "$lib/images/jarjar.webp";
-  import jarjar from "$lib/images/jarjar.png";
+  import rich from "$lib/images/rich.png";
+  import jan from "$lib/images/jan.png";
 
   function scrollIntoView(e: any) {
 	e.preventDefault();
@@ -24,33 +20,23 @@
     <div class="avatars">
       <div>
         <picture>
-          <source
-            type="image/webp"
-            srcset={kwigonw}
-          />
-          <img src={kwigon} width=120 height=120 alt="Max Headshot">
-        </picture>
-        <h3>Max</h3>
-      </div>
-      <div>
-        <picture>
-          <source
+          <!-- <source
             type="image/webp"
             srcset={yodaw}
-          />
-          <img src={yoda} width=120 height=120 alt="Nick headshot">
+          /> -->
+          <img src={rich} width=240 height=240 alt="Rich headshot">
         </picture>
-        <h3>Nick</h3>
+        <h3>Rich</h3>
       </div>
       <div>
         <picture>
-          <source
+          <!-- <source
             type="image/webp"
             srcset={jarjarw}
-          />
-          <img src={jarjar} width=120 height=120 alt="Rich headshot">
+          /> -->
+          <img src={jan} width=240 height=240 alt="Jan headshot">
         </picture>
-        <h3>Rich</h3>
+        <h3>Jan</h3>
       </div>
     </div>
     <div class="text">
@@ -115,12 +101,12 @@
       align-items: center;
 
       img {
-        width: 120px;
+        width: 180px;
         margin: 10px;
         height: auto;
 
         @media (max-width: 500px) {
-          width: 90px;
+          width: 140px;
           margin: 20px 5px 0;
         }
       }

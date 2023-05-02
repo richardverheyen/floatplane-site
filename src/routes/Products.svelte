@@ -5,47 +5,43 @@
 <section>
   <div id="products" />
   <div class="gutters">
-    <h2 class="mdc-typography--headline2">The Product We Offer</h2>
+    <h2 class="mdc-typography--headline2">The Services We Offer</h2>
 
     <ul>
       <li>
         <Paper>
-          <h3 class="mdc-typography--headline2">$100</h3>
-          <p class="mdc-typography--headline3">Residential Listing Copy</p>
+          <h3 class="mdc-typography--headline2"></h3>
+          <p class="mdc-typography--headline3">Web Application Development</p>
           <ul>
-            <li>24 hour turnaround</li>
-            <li>Copy for three elements: online, print + signboard</li>
-            <li>
-              Easy to use information template to submit your listings and
-              photos
-            </li>
-            <li>Written to suit your brand, style, and goals</li>
-            <li>Edits completed within an hour (during business hours)</li>
-            <li>Unlimited proofreading</li>
-            <li>Final version in a Word or PDF Document</li>
+            <li>Full Stack development in your technology of choice</li>
+            <li>Project lifecycle management</li>
+            <li>Design first, test first development</li>
+            <li>Measured KPIs</li>
           </ul>
         </Paper>
       </li>
-      <!-- <li style="opacity: 0.4">
+      <li>
         <Paper>
-          <h3 class="mdc-typography--headline2">Coming Soon</h3>
-          <p class="mdc-typography--headline3">"Everything" Copy</p>
+          <h3 class="mdc-typography--headline2"></h3>
+          <p class="mdc-typography--headline3">EDM Coding</p>
           <p>
-            Get us the details and we'll deliver everything you'll need to sell
-            a house in one package. Includes online listing, signage and brochure.
+            Our bread and butter. 
+            We use our experience with automation and templating to deliver fully tested EDMs with fast turn around times.
           </p>
         </Paper>
       </li>
-      <li style="opacity: 0.4">
+      <li>
         <Paper>
-          <h3 class="mdc-typography--headline2">Coming Soon</h3>
-          <p class="mdc-typography--headline3">"Everything" + Site Visit</p>
-          <p>
-            In some cases a property will require a site visit to learn more
-            about it's unique story. This can take a little longer to book in.
-          </p>
+          <h3 class="mdc-typography--headline2"></h3>
+          <p class="mdc-typography--headline3">Consulting Services</p>
+          <ul>
+            <li>Tech leads</li>
+            <li>Team training</li>
+            <li>Design first, test-driven development</li>
+            <li>Measured KPIs</li>
+          </ul>
         </Paper>
-      </li> -->
+      </li>
     </ul>
   </div>
 </section>

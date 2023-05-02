@@ -10,13 +10,18 @@
 
 <Drawer variant="modal" fixed={true} bind:open style="background: #f5f5f7">
   <Header>
-    <img 
-      id="drawer-logo" 
-      class="visible"
-      src={logo} 
-      width=200 
-      height=60 
-      alt="Floatplane">  
+    <a 
+      style="display: flex"
+      href="#top" on:click|preventDefault={scrollIntoView}>
+      <img 
+        id="drawer-logo" 
+        class="visible"
+        src={logo} 
+        width=200 
+        height=60 
+        style="pointer-events: none"
+        alt="Floatplane">  
+    </a>
   </Header>
   <Content>
     <div class="gutters">
@@ -26,7 +31,7 @@
             >What we do</a
           >
           <a href="#our-work" on:click|preventDefault={scrollIntoView}
-            >Words that worked</a
+            >Our Work</a
           >
           <a href="#contact" on:click|preventDefault={scrollIntoView}
             >Contact Us</a

@@ -8,28 +8,35 @@
     ActionIcons,
   } from "@smui/card";
 
-  import Badge from "@smui-extra/badge";
-  import Button, { Label } from "@smui/button";
+  // import Badge from "@smui-extra/badge";
+  // import Button, { Label } from "@smui/button";
   import IconButton, { Icon } from "@smui/icon-button";
 
-  import Dialog, {
-    Title,
-    Content as DialogContent,
-    Actions as DialogActions,
-  } from "@smui/dialog";
+  // import Dialog, {
+  //   Title,
+  //   Content as DialogContent,
+  //   Actions as DialogActions,
+  // } from "@smui/dialog";
 
   let open = false;
 
   import { analytics } from "$lib/firebase";
   import { logEvent } from "firebase/analytics";
 
+  import ember from "$lib/images/ember.svg";
+  import rails from "$lib/images/rails.png";
+  import postgres from "$lib/images/postgres.svg";
+  import interflux from "$lib/images/interflux.jpg";
+  import ndis from "$lib/images/ndis.jpg";
+  import lwc from "$lib/images/lwc.png";
+  import salesforce from "$lib/images/salesforce.png";
+  import w3c from "$lib/images/w3c.png";
+  import react from "$lib/images/react.png";
+  import mulesoft from "$lib/images/mulesoft.png";
+  import poncho from "$lib/images/poncho.png";
+
   import banner from "$lib/images/banner.webp";
   import bannerj from "$lib/images/bannerj.jpg";
-
-  import front from "$lib/images/work/1/front.jpg";
-  import frontw from "$lib/images/work/1/front.webp";
-  import kitchen from "$lib/images/work/1/kitchen.jpg";
-  import kitchenw from "$lib/images/work/1/kitchen.webp";
 
   import entry from "$lib/images/work/2/entry.jpg";
   import entryw from "$lib/images/work/2/entry.webp";
@@ -37,11 +44,13 @@
   import livingRoomw from "$lib/images/work/2/living-room.webp";
 
   let work = [{
-    title: "Lifestyle & Open Living in Regional Victoria",
+    title: "Interflux Electronics",
+    technologies: [
+      ember,
+      rails,
+      postgres
+    ],
     example: "... designed with luxury and space in mind. The entry will immediately leave you in awe with 9-foot ceilings and a welcoming private lounge.  The home then opens into a large, open plan kitchen, dining and family room that flows seamlessly ...",
-    bed: 4,
-    bath: 3,
-    car: 2,
     lines: [
       "Welcome to the perfect lifestyle home! Positioned in a stunning country location and within walking distance to local amenities, this recently built four bedroom house is brimming with luxurious features. Showcasing a large 598sqm block with double garage that includes exterior and interior roller door access, this property offers convenient everyday living.",
       "Inside, this home has been designed with luxury and space in mind. The entry will immediately leave you in awe with 9-foot ceilings and a welcoming private lounge.  The home then opens into a large, open plan kitchen, dining and family room that flows seamlessly onto the gorgeous alfresco area - perfect for long lunches and BBQ's! Further features include gas central heating, and a carpeted rumpus room ensuring plenty of space for everyone to play.",
@@ -51,20 +60,47 @@
     ],
     images: [
       [
-        {srcset: frontw, type: "image/webp"},
-        {srcset: front, type: "image/jpg"},
+        // {srcset: frontw, type: "image/webp"},
+        {srcset: interflux, type: "image/jpg"},
       ],
-      [
-        {srcset: kitchenw, type: "image/webp"},
-        {srcset: kitchen, type: "image/jpg"},
-      ]
+      // [
+      //   {srcset: kitchenw, type: "image/webp"},
+      //   {srcset: kitchen, type: "image/jpg"},
+      // ]
     ]
   }, {
-    title: 'A City Secret: Discreet Luxury at "Cambridge Court"',
+    title: "NDIS",
+    technologies: [
+      w3c,
+      lwc,
+      salesforce
+    ],
+    example: "... designed with luxury and space in mind. The entry will immediately leave you in awe with 9-foot ceilings and a welcoming private lounge.  The home then opens into a large, open plan kitchen, dining and family room that flows seamlessly ...",
+    lines: [
+      "Welcome to the perfect lifestyle home! Positioned in a stunning country location and within walking distance to local amenities, this recently built four bedroom house is brimming with luxurious features. Showcasing a large 598sqm block with double garage that includes exterior and interior roller door access, this property offers convenient everyday living.",
+      "Inside, this home has been designed with luxury and space in mind. The entry will immediately leave you in awe with 9-foot ceilings and a welcoming private lounge.  The home then opens into a large, open plan kitchen, dining and family room that flows seamlessly onto the gorgeous alfresco area - perfect for long lunches and BBQ's! Further features include gas central heating, and a carpeted rumpus room ensuring plenty of space for everyone to play.",
+      "The master bedroom includes an ensuite for the added convenience of grown ups, while all bedrooms have comfy carpet underfoot.",
+      "This property is just a stone's throw from the centre of town, where you will find restaurants, cafes and the local shops. Just a short walk away lies the Bannockburn P-12 College as well as numerous parklands and public transport routes to ensure you are connected in all directions!",
+      "If an amazing house combined with size, convenience and modern creature comforts is what you're after - then look no further! This home just won't last long on the market - call today to book your inspection!"
+    ],
+    images: [
+      [
+        // {srcset: frontw, type: "image/webp"},
+        {srcset: ndis, type: "image/jpg"},
+      ],
+      // [
+      //   {srcset: kitchenw, type: "image/webp"},
+      //   {srcset: kitchen, type: "image/jpg"},
+      // ]
+    ]
+  }, {
+    title: 'Poncho Car Insurance',
+    technologies: [
+      react,
+      mulesoft,
+      salesforce
+    ],
     example: "... includes a large and inviting dining room, next to a private living area which boasts both a fireplace and split-system airconditioning. Natural light pours in through the gorgeous lited doors that provide access to the courtyard.",
-    bed: 2,
-    bath: 1,
-    car: 1,
     lines: [
       "Set in a classic, columned brick facade, and superbly tucked away in the heart of one of Melbourne's most desirable suburbs, this classic two-bedroom apartment is perfect for the discerning buyer seeking both luxury and value.",
       "Renovated for contemporary living, the property features a well-appointed kitchen with stainless steel Bosch appliances, granite benchtops, and plenty of storage. It also enjoys both a front courtyard and a private, leafy back patio with lush turf for alfresco dining and entertaining.",
@@ -74,35 +110,35 @@
     ],
     images: [
       [
-        {srcset: entryw, type: "image/webp"},
-        {srcset: entry, type: "image/jpg"},
+        // {srcset: entryw, type: "image/webp"},
+        {srcset: poncho, type: "image/jpg"},
       ],
-      [
-        {srcset: livingRoomw, type: "image/webp"},
-        {srcset: livingRoom, type: "image/jpg"},
-      ]
+      // [
+      //   {srcset: livingRoomw, type: "image/webp"},
+      //   {srcset: livingRoom, type: "image/jpg"},
+      // ]
     ]
   }];
 
   let activeWork = 0;
 
-  function toggleOpen() {
-    open = !open;
+  // function toggleOpen() {
+  //   open = !open;
 
-    logEvent(analytics, 'select_content', {
-      content_type: 'article',
-      content_id: activeWork
-    });
-  }
+  //   logEvent(analytics, 'select_content', {
+  //     content_type: 'article',
+  //     content_id: activeWork
+  //   });
+  // }
   function nextExample() {
-    logEvent(analytics, 'search', {
-      value: "our-work"
-    });
+    // logEvent(analytics, 'search', {
+    //   value: "our-work"
+    // });
 
     if (activeWork === work.length - 1) {
       activeWork = 0;
     } else {
-      activeWork =+ 1;
+      activeWork = activeWork + 1;
     }
   }
 </script>
@@ -117,12 +153,11 @@
   <main>
     <div class="gutters">
       <div class="left">
-        <h2 class="mdc-typography--headline2">Words that <b>Worked.</b></h2>
+        <h2 class="mdc-typography--headline2">Work we're <b>proud</b> of</h2>
         <p class="about mdc-typography--body1">
-          Our copywriters are well-versed in the industry and have a knack for
-          bringing properties to life on the page. With Good Call Copywriting,
-          you can trust that your property will be represented in the best way
-          possible.
+          We've been around for a while, working behind the scenes to build fantastic 
+          user experiences for people all over the world. Here are some of the projects
+          that our team has been instrumental in creating.
         </p>
       </div>
       <div class="right">
@@ -136,50 +171,28 @@
             <IconButton on:click={nextExample} aria-label="Next work" style="position: absolute;top: -10px;right: -10px;background: white;border-radius: 50%;">
               <Icon class="material-icons" style="color: black">redo</Icon>
             </IconButton>
+            <h2 class="mdc-typography--headline6" style="margin: 0 0 10px;">
+              {work[activeWork].title}
+            </h2>
             <p class="mdc-typography--body1" style="margin: 0">
               {work[activeWork].example}
             </p>
           </Content>
           <Actions>
-            <ActionButtons>
+            <!-- <ActionButtons>
               <Button color="secondary" on:click={toggleOpen}>
                 <Label>Show me</Label>
               </Button>
-            </ActionButtons>
+            </ActionButtons> -->
             <ActionIcons>
-              <IconButton
-                style="position: relative;margin: 0 0.5em"
-                size="button"
-              >
-                <Icon class="material-icons">bed</Icon>
-                <Badge
-                  aria-label="bedrooms count"
-                  style="min-width: 0;min-height: 0;width: 10px;height: 18px;font-size: 11px!important;line-height: 20px!important;"
-                  >{work[activeWork].bed}</Badge
-                >
-              </IconButton>
-              <IconButton
-                style="position: relative;margin: 0 0.5em"
-                size="button"
-              >
-                <Icon class="material-icons">bathtub</Icon>
-                <Badge
-                  aria-label="bathrooms count"
-                  style="min-width: 0;min-height: 0;width: 10px;height: 18px;font-size: 11px!important;line-height: 20px!important;"
-                  >{work[activeWork].bath}</Badge
-                >
-              </IconButton>
-              <IconButton
-                style="position: relative;margin: 0 0.5em"
-                size="button"
-              >
-                <Icon class="material-icons">directions_car</Icon>
-                <Badge
-                  aria-label="car spaces count"
-                  style="min-width: 0;min-height: 0;width: 10px;height: 18px;font-size: 11px!important;line-height: 20px!important;"
-                  >{work[activeWork].car}</Badge
-                >
-              </IconButton>
+              {#each work[activeWork].technologies as tech}
+                <!-- <IconButton
+                  style="position: relative;margin: 0 0.5em"
+                  size="normal"
+                > -->
+                  <img src={tech} alt="Property" style="width: auto; height: 40px; max-width: 55px;margin: 0.5em"/>
+                <!-- </IconButton> -->
+              {/each}
             </ActionIcons>
           </Actions>
         </Card>
@@ -188,7 +201,7 @@
   </main>
 </section>
 
-<Dialog
+<!-- <Dialog
   bind:open
   aria-labelledby="large-scroll-title"
   aria-describedby="large-scroll-content"
@@ -218,7 +231,7 @@
       <Label>Done</Label>
     </Button>
   </DialogActions>
-</Dialog>
+</Dialog> -->
 
 <style lang="scss">
   section {

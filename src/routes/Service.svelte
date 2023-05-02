@@ -6,7 +6,7 @@
   <div id="service" />
   <div class="gutters">
     <h2 class="mdc-typography--headline2">We make it look easy.</h2>
-    <p><u>Great</u> real estate ad copy <br/>should be clear, concise, and persuasive. <br/>Our team writes <b>SEO rich</b> copy <br/>based on our extensive <br/>experience in the real estate industry.</p>
+    <p>We'll deliver your end to end web solution <br/><u>on time</u> and <u>on budget</u>. When we're done, <br/>we can even <u>train your team</u> to maintain it.</p>
   </div>
 </section>
 

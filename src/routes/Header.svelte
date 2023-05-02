@@ -36,6 +36,7 @@
           src={logo} 
           width=200 
           height=60 
+          style="pointer-events: none"
           alt="Floatplane">
       </a>
 
@@ -48,7 +49,7 @@
         <a
           href="#our-work"
           on:click|preventDefault={scrollIntoView}
-          use:Ripple={{ surface: true }}>Words that worked</a
+          use:Ripple={{ surface: true }}>Our Work</a
         >
         <a
           href="#contact"
