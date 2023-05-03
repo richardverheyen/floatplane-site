@@ -30,7 +30,7 @@
     content="Captivating, conversion-driven copy that turns browsers into buyers using words that work."
   />
   <meta property="og:title" content="Floatplane | Launch Confidently" />
-  <meta name="theme-color" content="{y === 0 ? "#20717D" : "#FFFFFF"}" />
+  <meta name="theme-color" content="{y < 350 ? "#20717D" : "#FFFFFF"}" />
 </svelte:head>
 
 <svelte:window bind:scrollY={y} />

@@ -17,8 +17,8 @@
         id="drawer-logo" 
         class="visible"
         src={logo} 
-        width=200 
-        height=60 
+        width=150 
+        height=45 
         style="pointer-events: none"
         alt="Floatplane">  
     </a>
@@ -57,6 +57,7 @@
     padding-top: 20px;
     filter: invert(1);
     transition: opacity ease 200ms;
+    margin-left: -5px;
 
     &.hidden {
       opacity: 0;
