@@ -29,8 +29,6 @@
   }
 </script>
 
-<svelte:body class="foo" />
-
 <div class="app">
   <Drawer bind:open {scrollIntoView} />
 
