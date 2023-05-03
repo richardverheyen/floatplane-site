@@ -1,19 +1,21 @@
 <script>
+  import Logo from "./Logo.svelte";
   import logo from "$lib/images/logo.svg";
   import cloud from "$lib/images/cloud-1.svg";
 </script>
 
 <section 
-  id="top"
-  style="background: -400px 40% / 800px no-repeat url({cloud}), calc(100% - -300px) 70% / 800px no-repeat url({cloud}), linear-gradient(#20717D, #569F9E, #E7C29F);">
+  id="top">
+  <!-- style="background: -400px 40% / 800px no-repeat url({cloud}), calc(100% - -300px) 70% / 800px no-repeat url({cloud}), linear-gradient(#20717D, #569F9E, #E7C29F);"> -->
   <div class="gutters">
     <picture>
-      <source
+      <!-- <source
         type="image/webp"
         srcset={logo}
       />
       <img id="hero-logo" src={logo} width=400 height=300 alt="Floatplane">
-    </picture>
+    </picture> -->
+    <Logo />
   </div>
 </section>
 

@@ -38,6 +38,7 @@
         </picture>
         <h3>Jan</h3>
       </div>
+      
     </div>
     <div class="text">
       <p class="about mdc-typography--header3">

@@ -9,7 +9,7 @@
 
     <ul>
       <li>
-        <Paper>
+        <Paper style="width: 100%; box-sizing: border-box;">
           <h3 class="mdc-typography--headline2"></h3>
           <p class="mdc-typography--headline3">Web Application Development</p>
           <ul>
@@ -21,7 +21,7 @@
         </Paper>
       </li>
       <li>
-        <Paper>
+        <Paper style="width: 100%; box-sizing: border-box;">
           <h3 class="mdc-typography--headline2"></h3>
           <p class="mdc-typography--headline3">EDM Coding</p>
           <p>
@@ -31,7 +31,7 @@
         </Paper>
       </li>
       <li>
-        <Paper>
+        <Paper style="width: 100%; box-sizing: border-box;">
           <h3 class="mdc-typography--headline2"></h3>
           <p class="mdc-typography--headline3">Consulting Services</p>
           <ul>

@@ -42,5 +42,13 @@
     font-size: 1.4em;
     line-height: 120%;
     margin-bottom: 60px;
+
+    @media (max-width: 500px) {
+      br {
+        display: none;
+      }
+    }
   }
+
+  
 </style>
