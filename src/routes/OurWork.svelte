@@ -38,11 +38,6 @@
   import banner from "$lib/images/banner.webp";
   import bannerj from "$lib/images/bannerj.jpg";
 
-  import entry from "$lib/images/work/2/entry.jpg";
-  import entryw from "$lib/images/work/2/entry.webp";
-  import livingRoom from "$lib/images/work/2/living-room.jpg";
-  import livingRoomw from "$lib/images/work/2/living-room.webp";
-
   let work = [{
     title: "Interflux Electronics",
     technologies: [
@@ -50,14 +45,14 @@
       rails,
       postgres
     ],
-    example: "... designed with luxury and space in mind. The entry will immediately leave you in awe with 9-foot ceilings and a welcoming private lounge.  The home then opens into a large, open plan kitchen, dining and family room that flows seamlessly ...",
-    lines: [
-      "Welcome to the perfect lifestyle home! Positioned in a stunning country location and within walking distance to local amenities, this recently built four bedroom house is brimming with luxurious features. Showcasing a large 598sqm block with double garage that includes exterior and interior roller door access, this property offers convenient everyday living.",
-      "Inside, this home has been designed with luxury and space in mind. The entry will immediately leave you in awe with 9-foot ceilings and a welcoming private lounge.  The home then opens into a large, open plan kitchen, dining and family room that flows seamlessly onto the gorgeous alfresco area - perfect for long lunches and BBQ's! Further features include gas central heating, and a carpeted rumpus room ensuring plenty of space for everyone to play.",
-      "The master bedroom includes an ensuite for the added convenience of grown ups, while all bedrooms have comfy carpet underfoot.",
-      "This property is just a stone's throw from the centre of town, where you will find restaurants, cafes and the local shops. Just a short walk away lies the Bannockburn P-12 College as well as numerous parklands and public transport routes to ensure you are connected in all directions!",
-      "If an amazing house combined with size, convenience and modern creature comforts is what you're after - then look no further! This home just won't last long on the market - call today to book your inspection!"
-    ],
+    example: "Based in Belgium, Interflux Electronics supplies clients around the world with premium soldering flux. Their products can be found in your smartphone, on the circuit boards of self driving cars and even on the surface of Mars.",
+    // lines: [
+    //   "Welcome to the perfect lifestyle home! Positioned in a stunning country location and within walking distance to local amenities, this recently built four bedroom house is brimming with luxurious features. Showcasing a large 598sqm block with double garage that includes exterior and interior roller door access, this property offers convenient everyday living.",
+    //   "Inside, this home has been designed with luxury and space in mind. The entry will immediately leave you in awe with 9-foot ceilings and a welcoming private lounge.  The home then opens into a large, open plan kitchen, dining and family room that flows seamlessly onto the gorgeous alfresco area - perfect for long lunches and BBQ's! Further features include gas central heating, and a carpeted rumpus room ensuring plenty of space for everyone to play.",
+    //   "The master bedroom includes an ensuite for the added convenience of grown ups, while all bedrooms have comfy carpet underfoot.",
+    //   "This property is just a stone's throw from the centre of town, where you will find restaurants, cafes and the local shops. Just a short walk away lies the Bannockburn P-12 College as well as numerous parklands and public transport routes to ensure you are connected in all directions!",
+    //   "If an amazing house combined with size, convenience and modern creature comforts is what you're after - then look no further! This home just won't last long on the market - call today to book your inspection!"
+    // ],
     images: [
       [
         // {srcset: frontw, type: "image/webp"},
@@ -75,14 +70,14 @@
       lwc,
       salesforce
     ],
-    example: "... designed with luxury and space in mind. The entry will immediately leave you in awe with 9-foot ceilings and a welcoming private lounge.  The home then opens into a large, open plan kitchen, dining and family room that flows seamlessly ...",
-    lines: [
-      "Welcome to the perfect lifestyle home! Positioned in a stunning country location and within walking distance to local amenities, this recently built four bedroom house is brimming with luxurious features. Showcasing a large 598sqm block with double garage that includes exterior and interior roller door access, this property offers convenient everyday living.",
-      "Inside, this home has been designed with luxury and space in mind. The entry will immediately leave you in awe with 9-foot ceilings and a welcoming private lounge.  The home then opens into a large, open plan kitchen, dining and family room that flows seamlessly onto the gorgeous alfresco area - perfect for long lunches and BBQ's! Further features include gas central heating, and a carpeted rumpus room ensuring plenty of space for everyone to play.",
-      "The master bedroom includes an ensuite for the added convenience of grown ups, while all bedrooms have comfy carpet underfoot.",
-      "This property is just a stone's throw from the centre of town, where you will find restaurants, cafes and the local shops. Just a short walk away lies the Bannockburn P-12 College as well as numerous parklands and public transport routes to ensure you are connected in all directions!",
-      "If an amazing house combined with size, convenience and modern creature comforts is what you're after - then look no further! This home just won't last long on the market - call today to book your inspection!"
-    ],
+    example: "NDIS has the highest accessibility requirements in the business, and bringing that standard to users through a Salesforce Community taught us how to squeeze the most out of the Salesforce tech stack.",
+    // lines: [
+    //   "Welcome to the perfect lifestyle home! Positioned in a stunning country location and within walking distance to local amenities, this recently built four bedroom house is brimming with luxurious features. Showcasing a large 598sqm block with double garage that includes exterior and interior roller door access, this property offers convenient everyday living.",
+    //   "Inside, this home has been designed with luxury and space in mind. The entry will immediately leave you in awe with 9-foot ceilings and a welcoming private lounge.  The home then opens into a large, open plan kitchen, dining and family room that flows seamlessly onto the gorgeous alfresco area - perfect for long lunches and BBQ's! Further features include gas central heating, and a carpeted rumpus room ensuring plenty of space for everyone to play.",
+    //   "The master bedroom includes an ensuite for the added convenience of grown ups, while all bedrooms have comfy carpet underfoot.",
+    //   "This property is just a stone's throw from the centre of town, where you will find restaurants, cafes and the local shops. Just a short walk away lies the Bannockburn P-12 College as well as numerous parklands and public transport routes to ensure you are connected in all directions!",
+    //   "If an amazing house combined with size, convenience and modern creature comforts is what you're after - then look no further! This home just won't last long on the market - call today to book your inspection!"
+    // ],
     images: [
       [
         // {srcset: frontw, type: "image/webp"},
@@ -100,14 +95,14 @@
       mulesoft,
       salesforce
     ],
-    example: "... includes a large and inviting dining room, next to a private living area which boasts both a fireplace and split-system airconditioning. Natural light pours in through the gorgeous lited doors that provide access to the courtyard.",
-    lines: [
-      "Set in a classic, columned brick facade, and superbly tucked away in the heart of one of Melbourne's most desirable suburbs, this classic two-bedroom apartment is perfect for the discerning buyer seeking both luxury and value.",
-      "Renovated for contemporary living, the property features a well-appointed kitchen with stainless steel Bosch appliances, granite benchtops, and plenty of storage. It also enjoys both a front courtyard and a private, leafy back patio with lush turf for alfresco dining and entertaining.",
-      "The home also includes a large and inviting dining room, next to a private living area which boasts both a fireplace and split-system airconditioning. Natural light pours in through the gorgeous lited doors that provide access to the courtyard.",
-      "Superbly located in on the country quiet Cambridge Street, with proximity to elite schools, restaurants, shops and transport links, this superb package ticks all the boxes.",
-      "This is a home that truly has it all - location, style, and luxury - and it's waiting to welcome you."
-    ],
+    example: "IAG's car insurance startup was effectively asking for React Hook Form in Salesforce back in 2018. Poncho leveraged Redbook for car valuation and provided users with an insurance quote in under a minute.",
+    // lines: [
+    //   "Set in a classic, columned brick facade, and superbly tucked away in the heart of one of Melbourne's most desirable suburbs, this classic two-bedroom apartment is perfect for the discerning buyer seeking both luxury and value.",
+    //   "Renovated for contemporary living, the property features a well-appointed kitchen with stainless steel Bosch appliances, granite benchtops, and plenty of storage. It also enjoys both a front courtyard and a private, leafy back patio with lush turf for alfresco dining and entertaining.",
+    //   "The home also includes a large and inviting dining room, next to a private living area which boasts both a fireplace and split-system airconditioning. Natural light pours in through the gorgeous lited doors that provide access to the courtyard.",
+    //   "Superbly located in on the country quiet Cambridge Street, with proximity to elite schools, restaurants, shops and transport links, this superb package ticks all the boxes.",
+    //   "This is a home that truly has it all - location, style, and luxury - and it's waiting to welcome you."
+    // ],
     images: [
       [
         // {srcset: entryw, type: "image/webp"},
@@ -168,7 +163,7 @@
             />
           </Media>
           <Content>
-            <IconButton on:click={nextExample} aria-label="Next work" style="position: absolute;top: -10px;right: -10px;background: white;border-radius: 50%;">
+            <IconButton on:click={nextExample} aria-label="Next work" style="position: absolute;top: -10px;right: -10px;background: white;border-radius: 50%; box-shadow: 1px 1px 2px black">
               <Icon class="material-icons" style="color: black">redo</Icon>
             </IconButton>
             <h2 class="mdc-typography--headline6" style="margin: 0 0 10px;">
