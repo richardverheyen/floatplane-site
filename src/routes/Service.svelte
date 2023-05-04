@@ -1,8 +1,8 @@
 <script lang="ts">
-  import livingRoomw from "$lib/images/services/dark-living-room.webp";
+  import coding from "$lib/images/coding.jpg";
 </script>
 
-<section style="background-image: url({livingRoomw})">
+<section style="background-image: url({coding})">
   <div id="service" />
   <div class="gutters">
     <h2 class="mdc-typography--headline2">We make it look easy.</h2>
