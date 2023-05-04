@@ -58,10 +58,6 @@
     filter: invert(1);
     transition: opacity ease 200ms;
     margin-left: -5px;
-
-    &.hidden {
-      opacity: 0;
-    }
 }
 
   .gutters {

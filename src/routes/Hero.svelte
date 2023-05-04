@@ -1,6 +1,5 @@
 <script>
   import Logo from "./Logo.svelte";
-  import logo from "$lib/images/logo.svg";
   import cloud from "$lib/images/cloud-1.svg";
 </script>
 
@@ -31,16 +30,6 @@
       justify-content: center;
       align-items: center;
       width: 100%;
-
-      #hero-logo {
-        padding-right: 50px;
-
-        @media (max-width: 500px) {
-          width: 240px;
-          height: 200px;
-          padding-right: 30px;
-        }
-      }
     }
   }
 </style>
