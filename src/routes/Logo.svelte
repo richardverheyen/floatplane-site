@@ -85,7 +85,7 @@
       padding-bottom: 0.2em;
       margin: 0;
       color: black;
-      transition: ease 400ms color;
+      transition: ease 50ms color;
 
       &.white {
         color: white;

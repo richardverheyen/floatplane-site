@@ -96,7 +96,7 @@
     top: 0;
     z-index: 1;
     width: 100%;
-    transition: ease 400ms background-color;
+    transition: ease 50ms background-color;
 
     &.opaque {
       background-color: rgba($background, 0.8);

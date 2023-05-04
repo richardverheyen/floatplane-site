@@ -42,16 +42,13 @@
     </div>
     <div class="text">
       <p class="about mdc-typography--header3">
-        At Good Call Copywriting, we understand that when it comes to selling real estate in Melbourne,
-        the stakes are high.
+        At Floatplane, we design the simplest solutions to help you launch your product with confidence.
       </p>
       <p class="about mdc-typography--body1">
-        We specialise in telling each property's unique story, creating engaging
-        and impactful copy that will help drive conversions.
+        We produce clear designs backed by intelligent tests so that you can always rely on our code to keep working into the future.
       </p>
       <p class="about mdc-typography--body1">
-        Our team of experienced writers are passionate about crafting persuasive
-        content that will make your property stand out from the competition.
+        Our team of experienced designers, developers and testers are passionate about building sleek, performant web apps with strong SEO that will make your product stand out from the competition.
       </p>
       <Button
         type="button"

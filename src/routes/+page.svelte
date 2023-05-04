@@ -24,12 +24,6 @@
 </script>
 
 <svelte:head>
-  <title>Floatplane | Launch Confidently</title>
-  <meta
-    name="description"
-    content="Captivating, conversion-driven copy that turns browsers into buyers using words that work."
-  />
-  <meta property="og:title" content="Floatplane | Launch Confidently" />
   <meta name="theme-color" content="{y < 350 ? "#20717D" : "#FFFFFF"}" />
 </svelte:head>
 
