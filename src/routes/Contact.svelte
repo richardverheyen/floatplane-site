@@ -3,7 +3,6 @@
   import CircularProgress from "@smui/circular-progress";
   import Button, { Label } from "@smui/button";
   import toast from "svelte-french-toast";
-  import { functions } from "$lib/firebase";
 
   let name = "";
   let email = "";
@@ -17,8 +16,15 @@
     loading = true;
     sent = true;
 
-    functions
-      .contactForm({name, email, subject, message})
+    fetch('https://australia-southeast1-goodcallcopywriting.cloudfunctions.net/floatplaneForm',{
+            method: 'POST',
+            body: JSON.stringify({name, email, subject, message}),
+            headers: {
+                'Content-Type':'application/json'
+            }
+        })
+    // functions
+      // .contactForm({name, email, subject, message})
       .then((data) => {
         toast.success("Message Sent, we'll be in touch shortly", {
           duration: 4000,
