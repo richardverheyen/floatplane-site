@@ -2,6 +2,7 @@
   import Button, { Label } from "@smui/button";
   import rich from "$lib/images/rich.png";
   import jan from "$lib/images/jan.png";
+  import zac from "$lib/images/zac.png";
 
   function scrollIntoView(e: any) {
 	e.preventDefault();
@@ -37,6 +38,16 @@
           <img src={jan} width=240 height=240 alt="Jan headshot">
         </picture>
         <h3>Jan</h3>
+      </div>
+      <div>
+        <picture>
+          <!-- <source
+            type="image/webp"
+            srcset={jarjarw}
+          /> -->
+          <img src={zac} width=240 height=240 alt="Zac headshot">
+        </picture>
+        <h3>Zac</h3>
       </div>
       
     </div>
@@ -76,10 +87,10 @@
   }
 
   .avatars {
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     margin: 40px auto;
     padding-right: 20px;
     box-sizing: border-box;
@@ -93,19 +104,38 @@
       overflow: hidden;
     }
 
+    @media (max-width: 700px) {
+      // flex-direction: column;
+      flex-wrap: wrap;
+    }
+
     > div {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+      @media (max-width: 570px) {
+        // margin-right: 0;
+        // margin-left: 0;
+      }
 
       img {
         width: 180px;
-        margin: 10px;
         height: auto;
 
         @media (max-width: 500px) {
           width: 140px;
-          margin: 20px 5px 0;
+          margin: 10px 5px 0;
+        }
+      }
+
+      @media (max-width: 500px) {
+        h3 {
+          margin: 10px 0;
         }
       }
     }
@@ -113,7 +143,7 @@
 
   .text {
     max-width: 600px;
-    width: 50%;
+    width: 40%;
 
     @media (max-width: 1000px) {
       display: flex;

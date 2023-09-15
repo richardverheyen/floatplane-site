@@ -36,9 +36,10 @@
           <p class="mdc-typography--headline3">Consulting Services</p>
           <ul>
             <li>Tech leads</li>
-            <li>Team training</li>
+            <li>UX / UI Design, Service Design</li>
             <li>Design first, test-driven development</li>
             <li>Measured KPIs</li>
+            <li>Team training</li>
           </ul>
         </Paper>
       </li>
