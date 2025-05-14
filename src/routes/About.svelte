@@ -2,7 +2,7 @@
   import Button, { Label } from "@smui/button";
   import rich from "$lib/images/rich.png";
   import jan from "$lib/images/jan.png";
-  import zac from "$lib/images/zac2.png";
+  import zac from "$lib/images/zac2.jpg";
 
   function scrollIntoView(e: any) {
 	e.preventDefault();
