@@ -3,7 +3,7 @@
 
 <footer>
   <p><span>✉️</span> hello@floatplane.dev</p>
-  <p><span>📍</span> 278 Bathurst St West Hobart, TAS 7000</p>
+  <p><span>📍</span> Sydney - Melbourne - Hobart</p>
 </footer>
 
 <style lang="scss">
